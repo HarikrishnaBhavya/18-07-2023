@@ -566,7 +566,8 @@ worker node will maintain containers.
 SETUP: 
 1. CREATE 3 SERVERS AND INSTALL DOCKER
 2. SET HOSTNAMES (hostnamectl set-hostname manager/worker1/worker2)
-3. GO TO MANAGER NODE (docker swarm init) -- > copy token to all nodes
+3. GO TO MANAGER NODE (docker swarm init) -- > copy token to all nodes       
+(docker swarm init --advertise-addr 172.31.3.48)
 4. docker node ls
 
 SERVICES:
